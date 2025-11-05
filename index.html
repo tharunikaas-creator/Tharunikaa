@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tharunika .S | Civil Engineer Portfolio</title>
+
+  <style>
+    /* ---------- GLOBAL ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: #ffffff;
+      color: #1f2937;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    h1, h2, h3 {
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    section {
+      padding: 80px 10%;
+      text-align: center;
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.7s ease-out;
+    }
+
+    section.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ---------- HEADER ---------- */
+    header {
+      background-color: #1e3a8a;
+      color: white;
+      padding: 20px 10%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      color: #ffffff;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #a5b4fc;
+    }
+
+    /* ---------- HERO SECTION ---------- */
+    .hero {
+      color: #1e3a8a;
+      background: white;
+      padding: 120px 10%;
+      text-align: center;
+      border-bottom: 2px solid #e5e7eb;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .hero h2 {
+      font-weight: 400;
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-style: italic;
+      font-size: 1.1rem;
+      color: #4b5563;
+    }
+
+    /* ---------- ABOUT ---------- */
+    .about {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #f9fafb;
+      border-radius: 16px;
+      padding: 40px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    .about h2 {
+      color: #1e3a8a;
+      margin-bottom: 20px;
+    }
+
+    /* ---------- SKILLS ---------- */
+    .skills h2 {
+      color: #1e3a8a;
+      margin-bottom: 40px;
+    }
+
+    .skill-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .skill-card {
+      background-color: #ffffff;
+      border-radius: 12px;
+      padding: 20px;
+      font-weight: 600;
+      color: #1f2937;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      transition: all 0.3s ease;
+    }
+
+    .skill-card:hover {
+      background-color: #1e3a8a;
+      color: white;
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(30,58,138,0.3);
+    }
+
+    /* ---------- CONTACT ---------- */
+    .contact h2 {
+      color: #1e3a8a;
+      margin-bottom: 20px;
+    }
+
+    .contact p {
+      margin-bottom: 20px;
+      font-size: 1.1rem;
+      color: #374151;
+    }
+
+    .contact-box {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      align-items: center;
+    }
+
+    .contact-box a, .contact-box span {
+      display: inline-block;
+      border: 2px solid #1e3a8a;
+      border-radius: 10px;
+      padding: 12px 25px;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .contact-box a:hover {
+      background-color: #1e3a8a;
+      color: white;
+    }
+
+    footer {
+      background-color: #1e3a8a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      letter-spacing: 0.5px;
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+      header {
+        flex-direction: column;
+      }
+      section {
+        padding: 60px 5%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="logo">Tharunika .S</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <h1>Tharunika .S</h1>
+    <h2>B.E. Civil Engineering Student</h2>
+    <p>Government College of Engineering, Karuppur, Salem, Tamil Nadu</p>
+    <br>
+    <p>"Building dreams into structures that stand the test of time."</p>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="about">
+      <h2>About Me</h2>
+      <p>
+        I am a passionate and hardworking Civil Engineering student with a keen interest in
+        structural design, construction planning, and sustainable building development. I aspire
+        to work on projects that combine innovation, quality, and environmental responsibility.
+      </p>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills" id="skills">
+    <h2>Technical Skills</h2>
+    <div class="skill-grid">
+      <div class="skill-card">AutoCAD</div>
+      <div class="skill-card">STAAD Pro</div>
+      <div class="skill-card">Revit Architecture</div>
+      <div class="skill-card">MS Excel</div>
+      <div class="skill-card">Surveying & Leveling</div>
+      <div class="skill-card">Construction Planning</div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <h2>Contact</h2>
+    <p>Feel free to reach out for academic or project collaborations.</p>
+    <div class="contact-box">
+      <a href="mailto:tharunika123@gmail.com">tharunika123@gmail.com</a>
+      <span>📞 987654321</span>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Tharunika .S | All Rights Reserved</p>
+  </footer>
+
+  <!-- ANIMATION SCRIPT -->
+  <script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    });
+    document.querySelectorAll('section').forEach(section => observer.observe(section));
+  </script>
+</body>
+</html>
